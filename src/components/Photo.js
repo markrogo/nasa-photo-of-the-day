@@ -18,7 +18,7 @@ return (
             }  
 
         </div>
-        <div>
+        <div className='description'>
             <p>{props.text}</p>
         </div> 
     </>

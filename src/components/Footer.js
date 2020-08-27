@@ -7,10 +7,14 @@ const Footer = (props) => {
     if (!props) return <h3>Loading...</h3>;
 
     return (
-        <div>
-            <p>This media is located at {props.source} </p>
-        </div>
-
+        <>
+            <div className="footer">
+                <p>This media is located at {props.source} </p>
+            </div>
+            <div className="copyright">
+                { (props.copyright != "") ? `Copyright ${props.copyright}` : `` }
+            </div>
+        </>
     )
 }
 
